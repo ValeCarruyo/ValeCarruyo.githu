@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2? family= Cormorant+Garamond:wght@500;600;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Cinzel:wght@400;500;600;700 & display=swap');
+
+:root{
+    --color1:#F2CD5C;
+    --color2:#D9A648;
+    --color3:#403117;
+    --color4:#F2CC85;
+    --color5:#BF8339;
+    --color-white:#FFFFFF;
+    --color-black:#000000;
+    --color-gris-oscuro: #333333;
+    --color-gris-claro: #CCCCCC;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5em;
+    max-width: 1400px;
+}
+
+img { 
+    display:block;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom:24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    line-height: 1.2em; 
+    font-family: 'Garamond','serif';
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 700;/* grosor de la letra */
+    letter-spacing: -4px;/* espaciado entre letras */
+}
+
+h2{
+    font-size: 54px;
+    font-weight: 500;
+    text-transform: uppercase; /* Muestra las letras en minúscula */
+    letter-spacing: -4px;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+#main-header{
+    background-color: var(--color5);
+    color: var(--color-white);
+}
+
+#main-header p{ /*El espacio significa dentro de */
+    margin-bottom:0;
+}
+
+#main-banner{
+    max-width: 1400px;
+}
+
+#preventa {
+    background-color: var(--color4);
+}
+
+#tendencias {
+    background-image: url("../images/libroo.jpg");
+    background-size: cover; /*La imagen se adapta lo más posible al ancho del contenedor*/
+    background-position: right center; /* para que la imagen cuando se achique quede centrada en la derecha y en el centro, (horizaontal a la derecha verticalmente centrado) */
+    color: var(--color-white);
+}
+
+#vendidos{
+    background-color: var(--color3) ;
+    color:var(--color-white);
+}
+
+#festival {
+    background-color: var(--color4);
+}
+
+#clasicos {
+    background-color: var(--color1);
+    color: var(--color-white);
+}
+
+#audio{
+    background-color: var(--color2);
+    color: var(--color-white);
+}
+
+#entrevista{
+    background-color: var(--color3);
+    color: var(--color-white);
+    
+}
+
+#generos {
+    background-color:var(--color2);
+    color: var(--color-white);
+}
+
+#newsletter{
+    background-image: url("../images/manos.jpg");
+    background-position: cover;
+    text-align: right;
+    color:var(--color-negro);
+    background-attachment: fixed; /*para que la imagen quede fija con respecto al navegador*/
+}
+
+#tiendas{
+    background-color: var(--color5);
+    color: var(--color-white);
+}
+
+#redes{
+    background-color: var(--color-white);
+}
+
+#vym{
+    background-color: var(--color4);
+    color:var(--color-white)
+}
+
+#main-footer{
+    background-color: #000000;
+    color:var(--color-gris-claro);
+}
+
+#magia{
+    background-color: var(--color5);
+    color: var(--color-white);
+}
+
+.padded{
+    padding-top: 45px; /* padding es la distancia del borde al contenido */
+    padding-bottom: 45px;
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row{
+    display: flex; 
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box; /* Hace que el padding no incremente el ancho */
+}
+
+.col-50 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-66{
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+}
+
+.img-fluid{
+    max-width: 100%; /* Para que el ancho de la imagen sea como máximo el ancho de su contenedor*/
+}
+
+.tamañoimg{
+    height: 270px;
+}
+
+.centrado-vertical{
+    display: flex;
+    flex-direction: column; /*Para ordenar el centrado como una columa*/
+    justify-content: center; /*Justifica el texto centrado*/
+}
+
+.mega-texto{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 0.8em; /*80% del tamaño de la letra */
+    letter-spacing: -4px;
+}
+
+.col-75{
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.centrado-izquierda {
+    display: flex;
+    flex-direction: column; /*Para ordenar el centrado como una columa*/
+    justify-content: left;
+    text-align: left;
+}
+
+.texto-importante{
+    color: var(--color3);
+}
+
